@@ -9,7 +9,7 @@
 }
 
 "provider" "flexibleengine" {
-  "auth_url" = "[‎2019-‎11-‎18 12:37] SRIVASTAVA Abhay OBS/OCB:  https://iam.eu-west-0.prod-cloud-ocb.orange-business.com/v3"
+  "auth_url" = "https://iam.eu-west-0.prod-cloud-ocb.orange-business.com/v3"
 }
 
 "provider" "vault" {
