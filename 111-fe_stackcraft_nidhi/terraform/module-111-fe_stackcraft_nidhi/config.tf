@@ -18,6 +18,10 @@
   "token" = "FE_Stackcraft_nidhi"
 }
 
+"resource" "flexibleengine_compute_instance_v2" "nidhi_ecs-fe" {
+  "name" = "nidhi_ecs-fe"
+}
+
 "variable" "env" {
   "default" = "staging"
 
