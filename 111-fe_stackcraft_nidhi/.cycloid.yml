@@ -1,0 +1,19 @@
+name: FE_Stackcraft_nidhi
+canonical: 111-fe_stackcraft_nidhi
+author: NIDHI BHATNAGAR
+description: FE_Stackcraft_nidhi
+type: stack
+image: ""
+keywords:
+- demo
+technologies: []
+config:
+  pipeline:
+    pipeline:
+      path: pipeline/terraform-pipeline.yaml
+    variables:
+      path: pipeline/variables.sample.yaml
+  terraform:
+    111-fe_stackcraft_nidhi:
+      destination: ($ project $)/terraform/($ environment $)/111-fe_stackcraft_nidhi.tf
+      path: terraform/111-fe_stackcraft_nidhi.tf.sample
