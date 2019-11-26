@@ -1,0 +1,14 @@
+module "tf-111-cce-fe" {
+  source = "module-111-cce-fe"
+
+  # network_id - type: string
+  # The ID of the network to attach the port resources to
+  network_id = ""
+
+  # subnet_id - type: string
+  # Subnet in which to allocate an IP address
+  subnet_id = ""
+
+  # env - type: string
+  # env = "staging"
+}
