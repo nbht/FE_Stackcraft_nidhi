@@ -23,9 +23,7 @@
 
   "cluster_version" = "v1.13.10"
 
-  "container_network_type" = "Tunnel network"
-
-  "count" = 1
+  "container_network_type" = "overlay_l2"
 
   "flavor_id" = "cce.s2.small"
 
