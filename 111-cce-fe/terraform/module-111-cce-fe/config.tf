@@ -21,11 +21,17 @@
 "resource" "flexibleengine_cce_cluster_v3" "cce-fe" {
   "cluster_type" = "VM Cluster"
 
+  "cluster_version" = "v1.13.10"
+
   "container_network_type" = "Tunnel network"
+
+  "count" = 1
 
   "flavor_id" = "cce.s2.small"
 
   "name" = "nbcluster"
+
+  "region" = "eu-west-0"
 
   "subnet_id" = "1d622324-30f9-44dc-ab9b-4c17bf88f8dc"
 
