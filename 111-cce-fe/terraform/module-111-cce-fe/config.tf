@@ -18,6 +18,20 @@
   "token" = "test"
 }
 
+"resource" "flexibleengine_cce_cluster_v3" "cce-fe" {
+  "cluster_type" = "VM Cluster"
+
+  "container_network_type" = "Tunnel network"
+
+  "flavor_id" = "cce.s2.small"
+
+  "name" = "nbcluster"
+
+  "subnet_id" = "1d622324-30f9-44dc-ab9b-4c17bf88f8dc"
+
+  "vpc_id" = "1fd7a904-2367-4a43-ae49-1351588387d6"
+}
+
 "variable" "env" {
   "default" = "staging"
 
