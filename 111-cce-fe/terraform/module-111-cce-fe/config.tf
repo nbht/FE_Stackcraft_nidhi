@@ -21,8 +21,6 @@
 "resource" "flexibleengine_cce_cluster_v3" "cce-fe" {
   "cluster_type" = "VM Cluster"
 
-  "cluster_version" = "v1.13.10"
-
   "container_network_type" = "overlay_l2"
 
   "flavor_id" = "cce.s2.small"
