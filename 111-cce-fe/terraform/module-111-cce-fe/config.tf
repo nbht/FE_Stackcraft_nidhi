@@ -18,22 +18,6 @@
   "token" = "test"
 }
 
-"resource" "flexibleengine_cce_cluster_v3" "cce-fe" {
-  "cluster_type" = "VirtualMachine"
-
-  "container_network_type" = "overlay_l2"
-
-  "flavor_id" = "cce.s2.small"
-
-  "name" = "nbcluster"
-
-  "region" = "eu-west-0"
-
-  "subnet_id" = "1d622324-30f9-44dc-ab9b-4c17bf88f8dc"
-
-  "vpc_id" = "1fd7a904-2367-4a43-ae49-1351588387d6"
-}
-
 "variable" "env" {
   "default" = "staging"
 
