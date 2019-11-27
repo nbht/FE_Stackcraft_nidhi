@@ -17,3 +17,7 @@ config:
       path: pipeline/terraform-pipeline.yaml
     variables:
       path: pipeline/variables.sample.yaml
+  terraform:
+    111-ccenodes:
+      destination: ($ project $)/terraform/($ environment $)/111-ccenodes.tf
+      path: terraform/111-ccenodes.tf.sample
