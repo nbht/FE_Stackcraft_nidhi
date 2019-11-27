@@ -18,14 +18,34 @@
   "token" = "test"
 }
 
-"resource" "flexibleengine_s3_bucket" "nidhi-stack-test" {
-  "bucket" = "nidhi-test-bucket"
-}
+"resource" "flexibleengine_rds_instance_v3" "rdsv3" {
+  "availability_zone" = ["eu-west-0a"]
 
-"resource" "flexibleengine_s3_bucket_object" "bucket-nidhi-object" {
-  "bucket" = "${flexibleengine_s3_bucket.nidhi-stack-test.bucket}"
+  "db" = {
+    "password" = "redhat22"
 
-  "key" = "test"
+    "port" = 8080
+
+    "type" = "PostgreSQL"
+
+    "version" = "11"
+  }
+
+  "flavor" = "General-enhanced"
+
+  "name" = "myrds"
+
+  "subnet_id" = "1d622324-30f9-44dc-ab9b-4c17bf88f8dc"
+
+  "volume" = {
+    "disk_encryption_id" = "test"
+
+    "size" = 50
+
+    "type" = "COMMON"
+  }
+
+  "vpc_id" = "1fd7a904-2367-4a43-ae49-1351588387d6"
 }
 
 "variable" "env" {
