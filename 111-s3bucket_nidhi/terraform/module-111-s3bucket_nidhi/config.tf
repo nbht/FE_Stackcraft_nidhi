@@ -18,6 +18,8 @@
   "token" = "test"
 }
 
+"resource" "flexibleengine_s3_bucket" "nidhi-stack-test" {}
+
 "variable" "env" {
   "default" = "staging"
 
