@@ -1,0 +1,19 @@
+name: ccenodes
+canonical: 111-ccenodes
+author: NIDHI BHATNAGAR
+description: ccenodes
+type: stack
+image: ""
+keywords:
+- ccenodes
+- provider:flexibleengine
+- provider:vault
+technologies:
+- technology: stackcraft
+  version: "1"
+config:
+  pipeline:
+    pipeline:
+      path: pipeline/terraform-pipeline.yaml
+    variables:
+      path: pipeline/variables.sample.yaml
