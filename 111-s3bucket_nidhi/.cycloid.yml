@@ -1,0 +1,19 @@
+name: s3bucket_nidhi
+canonical: 111-s3bucket_nidhi
+author: NIDHI BHATNAGAR
+description: s3resources
+type: stack
+image: ""
+keywords:
+- mys3resources
+- provider:flexibleengine
+- provider:vault
+technologies:
+- technology: stackcraft
+  version: "1"
+config:
+  pipeline:
+    pipeline:
+      path: pipeline/terraform-pipeline.yaml
+    variables:
+      path: pipeline/variables.sample.yaml
