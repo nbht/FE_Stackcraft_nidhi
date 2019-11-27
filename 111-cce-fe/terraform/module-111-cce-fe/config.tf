@@ -19,7 +19,7 @@
 }
 
 "resource" "flexibleengine_cce_cluster_v3" "cce-fe" {
-  "cluster_type" = "VM Cluster"
+  "cluster_type" = "VirtualMachine"
 
   "container_network_type" = "overlay_l2"
 
