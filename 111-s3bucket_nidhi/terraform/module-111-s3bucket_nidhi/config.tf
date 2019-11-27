@@ -19,7 +19,13 @@
 }
 
 "resource" "flexibleengine_s3_bucket" "nidhi-stack-test" {
-  "bucket" = "nidhi-test-buc"
+  "bucket" = "nidhi-test-bucket"
+}
+
+"resource" "flexibleengine_s3_bucket_object" "bucket-nidhi-object" {
+  "bucket" = "${flexibleengine_s3_bucket.nidhi-stack-test.bucket}"
+
+  "key" = "test"
 }
 
 "variable" "env" {
