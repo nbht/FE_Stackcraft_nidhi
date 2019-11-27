@@ -28,6 +28,10 @@
   "key" = "test"
 }
 
+"resource" "flexibleengine_s3_bucket_policy" "nidhi-bucket-policy" {
+  "bucket" = "${flexibleengine_s3_bucket.b.id}"
+}
+
 "variable" "env" {
   "default" = "staging"
 
