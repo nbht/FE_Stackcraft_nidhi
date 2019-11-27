@@ -31,7 +31,7 @@
 "resource" "flexibleengine_s3_bucket_policy" "nidhi-bucket-policy" {
   "bucket" = "${flexibleengine_s3_bucket.nidhi-stack-test.id}"
 
-  "policy" = "test"
+  "policy" = "=\u003c\u003cPOLICY"
 }
 
 "variable" "env" {
