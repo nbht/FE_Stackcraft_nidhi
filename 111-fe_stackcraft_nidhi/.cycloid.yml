@@ -9,4 +9,8 @@ keywords:
 - provider:flexibleengine
 - provider:vault
 technologies: []
-config: {}
+config:
+  terraform:
+    111-fe_stackcraft_nidhi:
+      destination: ($ project $)/terraform/($ environment $)/111-fe_stackcraft_nidhi.tf
+      path: terraform/111-fe_stackcraft_nidhi.tf.sample
