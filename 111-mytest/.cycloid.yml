@@ -1,0 +1,19 @@
+name: mytest
+canonical: 111-mytest
+author: NIDHI BHATNAGAR
+description: mytest
+type: stack
+image: ""
+keywords:
+- mytest
+- provider:flexibleengine
+- provider:vault
+technologies:
+- technology: stackcraft
+  version: "1"
+config:
+  pipeline:
+    pipeline:
+      path: pipeline/terraform-pipeline.yaml
+    variables:
+      path: pipeline/variables.sample.yaml
