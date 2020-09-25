@@ -1,16 +1,23 @@
+version: "2"
 name: FE_Stackcraft_nidhi
 canonical: 111-fe_stackcraft_nidhi
 author: NIDHI BHATNAGAR
+status: private
 description: FE_Stackcraft_nidhi
-type: stack
 image: ""
 keywords:
 - demo
 - provider:flexibleengine
 - provider:vault
-technologies: []
+technologies:
+- technology: stackcraft
+  version: "1"
+dependencies: []
 config:
-  terraform:
-    111-fe_stackcraft_nidhi:
-      destination: ($ project $)/terraform/($ environment $)/111-fe_stackcraft_nidhi.tf
-      path: terraform/111-fe_stackcraft_nidhi.tf.sample
+  default:
+    description: ""
+    name: default
+    terraform:
+      111-fe_stackcraft_nidhi:
+        destination: ($ project $)/terraform/($ environment $)/111-fe_stackcraft_nidhi.tf
+        path: terraform/111-fe_stackcraft_nidhi.tf.sample
